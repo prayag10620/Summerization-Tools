@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<section class="menu2" style="background: aliceblue;">
+    <h1    style=" text-align: center;
+padding: 15px 0px;
+font-family: fangsong;
+font-size: 30px;
+font-weight: 500;
+font-variant-caps: all-small-caps;
+color-interpolation-filters: srgb;
+color: brown;">Results Page</h1>
+<br>    
+    <div class="container-fluid">
+        <div class="row" style="height: 441px;">
+          
+
+            <div class="col-md-6">
+                <section class="contr" style="margin: 0px 0px;">
+
+                    <p class="justify-content-center" style="font-size: 25px;
+                    font-family: cursive;">Caption for your Image can be described as</p>
+                    <ul class="list-group list-group-flush justify-content-center">
+                        <li class="list-group-item list-group-item-action  list-group-item-dark" style="margin: 10px 10px;">{{ GreedCap }}</li>
+                        <li class="list-group-item list-group-item-action list-group-item-success" style="margin: 10px 10px;">{{ BeamCap }}</li>
+                    </ul>
+                </section>
+
+            </div>
+            
+            <div class="col-md-6">
+                <br>
+
+                <img src="../static/imgs/detectimg.png" class="img-fluid trtrt" alt="Responsive image">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    
+{% endblock %}

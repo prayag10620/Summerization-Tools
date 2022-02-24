@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<section class="result_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="head_result">Results Page</h1>
+    <p class="result_show">Your Details</p>
+    <ul class="shoe_res_detail" class="list-group">
+        <li class="list-group" style="background-color: darkgray;">{{ myemail }}</li>
+        <li class="list-group" style="background-color: darkgray;">{{ mycity  }}</li>
+        <li class="list-group" style="background-color: darkgray;">{{place }}</li>
+        <li class="list-group" style="background-color: darkgray;">{{ zip }}</li>
+    </ul>   
+            <p class="detaili__result">Your Complaint has been registered successfully.<br> For more detail check your mail</p>
+  
+            </div>
+            <div class="col-sm-6">
+                
+    <div class="results">
+        {% if garbage == 1 %}
+        <h2 class="garbage_found">Garbage has been detected in your Image</h2>
+
+            <img class=" detect_garbage" src= "../static/data_imgs_save/{{picture_path}}" >
+        {% elif garbage == 0 %}
+            <h2><span class="danger">No Garbage detected in your submitted Image</span></h2>
+           
+        <p>It's request to not file any fake complaints</p>
+
+        {% endif %}
+
+    </div> 
+            </div>
+        </div>
+    </div>
+</section>
+            <div class="map_display" style="width: 100%; height: 60%; ">
+                {% include "map.html" %}
+            </div>
+{% endblock %}
+

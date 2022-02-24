@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- 
+  <header style="margin: -71px 0px 0px 0px;">
+    <div class="container">
+      <div id='brand'>
+        <h1 class="hre">Your Document Summary</h1>
+      </div>
+    </div>
+  </header> -->
+
+  
+
+  <div class="results_top" style="    background-color: aliceblue;
+  margin-bottom: 18px;">
+    <p style="color: #5c5c99;
+    font-size: 20px;
+    text-align: center;
+    line-height: 3;"><b>Results for your commit</b></p>
+
+          <h3 class="main_h_top" style="padding: 0px 17px;"> Top Topics that Your Document Explain are  </h3>
+         
+
+
+  <div class="container-fluid">
+    <div class="row" style="height: 441px;">
+      
+
+        <div class="col-md-6">
+        <!-- <h2 class="res_topx">{{i}}</h2> -->
+        {% for i in Topics %}
+        <ul class="list-group list-group-flush justify-content-center" style="     margin: 30px 1px -39px 108px;
+            text-align: center;
+            font-size: 28px;
+            font-family: monospace;
+            font-variant-caps: all-small-caps;
+            font-weight: bolder;
+            color: bisque;">
+          
+          <li class="list-group-item list-group-item-action  list-group-item-dark" style="margin: 10px 10px ;
+              width: 500px; height: 56px;">{{ i }}
+          </li>
+          
+          
+          
+        </ul>
+          {%endfor%}
+          
+        </div>
+           
+
+        
+        
+        <div class="col-md-6">
+            <br>
+
+            <img src="../static/imgs/giphy.webp" class="img-fluid toppt" alt="Responsive image">
+        </div>
+
+    </div>
+
+</div>
+
+  {% endblock %}

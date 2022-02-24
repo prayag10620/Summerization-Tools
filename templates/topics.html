@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+
+<!-- <div class="form-group shadow-textarea">
+   
+    <form action="{{ url_for('get_topics')}}" method="POST">
+        <p class="font-weight-bold" style="font-size: 29px;
+        font-style: italic;
+        font-family: ui-serif;
+        margin: 45 px 3px  15px  0 px;
+        text-align: center;
+        font-variant: common-ligatures;">Enter Your Email Subject Here</p>
+        <textarea class="form-control z-depth-1 " name="article" class="email_area" style="width: 50%;
+        color: black;
+        height: 158px;
+        margin: 0px 328px;
+        /* border: darkred; */
+        border: 1px solid #9a1717;
+        border-radius: 42px;
+        text-align: center;
+        font-size: 20px;
+        /* color: #fff4fa; */
+        /* background-color: #d0b1c1; */
+    
+                " id="email_text" rows="3" placeholder="Write something here..."></textarea><br>
+                <input type="text" name="num_topics" placeholder="wirite the number"><br>
+        <button type="submit" class="btn btn-primary btn-sm btn-info" style="width: 255px;
+        text-align: center;
+       
+    margin: 29px 7px 5px 77px;
+    border-radius: 1px;
+    border-color: #97f1e8;
+    background-color: #912fdc;
+    ">Predict</button>
+
+    </form>
+</div> -->
+
+
+<section class="menu2" style="background: aliceblue;">
+  <h1    style=" text-align: center;
+padding: 15px 0px;
+font-family: fangsong;
+font-size: 30px;
+font-weight: 500;
+font-variant-caps: all-small-caps;
+color-interpolation-filters: srgb;
+color: brown;">Upload Documents Details</h1>
+<br>    
+  <div class="container-fluid">
+      <div class="row"  class="form-group shadow-textarea" style="height: 441px;">
+        
+
+          <div class="col-md-12">
+            <form action="{{ url_for('get_topics')}}" method="POST">
+             
+              <section class="form_topics_bor">    
+                <p class="topixc_hrd"> Either Paste your content Here/Upload any Documents(.pdf,.doc,.txt)</p>
+        <textarea class="form-control z-depth-1 " name="article" class="email_area" style="width: 50%;
+        color: black;
+        height: 158px;
+        width: 500px;
+        margin: 0px 8px;
+        border: 1px solid #9a1717;
+        border-radius: 42px;
+        text-align: center;
+        font-size: 20px;
+        
+    
+                " id="email_text" rows="3" placeholder="Write something here..."></textarea><br>
+
+            <div class="file-field form_topics_tt">
+              <a class="btn-floating purple-gradient mt-0 float-left">
+               
+                <div class="custom-file">
+                  <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                  <input type="file" class="custom-file-input" id="validatedCustomFile" >
+                  <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                  <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+              </a>  
+              
+            </div>
+<br>
+
+          <input type="text" class="ytttp_t" name="num_topics" placeholder="wirite the number"><br>
+           <button type="submit" class="btn btn-primary btn-sm btn-info" style="width: 255px;
+           text-align: center;
+          
+       margin: 29px 27px 10px 110px;
+       border-radius: 12px;
+       border-color: #97f1e8;
+       background-color: #912fdc;
+       ">Get Topics</button>
+          </section>
+        </form>
+      </div>
+
+  </div>
+  </div>
+
+</section>
+
+
+
+
+{% endblock %}

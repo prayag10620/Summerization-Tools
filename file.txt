@@ -1,0 +1,1 @@
+this article will learn how to convert any Machine learning problem statement into an Android app. 90 percent of times when any data science practitioner deploys his problem statement it is in the form of a website. in this article, we will learn how can you convert any Machine learning problem statement into an Android app.
